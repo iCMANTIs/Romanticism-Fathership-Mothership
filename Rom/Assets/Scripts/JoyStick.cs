@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
-public struct JoyStickData 
+public struct JoyStickData //结构体——摇杆数据
 {
-    public Vector2 dir; 
-    public float radius; 
+    public Vector2 dir; //移动方向
+    public float radius; //移动半径
     public JoyStickData(Vector2 d, float r)
     {
         this.dir = d;
@@ -19,11 +19,11 @@ public struct JoyStickData
     }
 
 }
-public class JoyStick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler    
+public class JoyStick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler    //三个接口，点击、抬起、拖拽
 {
-    public RectTransform bound; 
-    public RectTransform center; 
-    public float radius; 
+    public RectTransform bound; //外圈
+    public RectTransform center; //内圈
+    public float radius; //移动限制的半径
 
     private JoyStickData HandleEventData(PointerEventData eventData)
     {
