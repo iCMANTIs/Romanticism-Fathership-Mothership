@@ -1,1 +1,2 @@
 # T2-Romanticism
+This is a serious game themed around Romanticism, using a narrative editor to create player dialogues. It allows players to make choices during conversations with their parents, with the aim of providing a deeper understanding to those unfamiliar with the reasons, processes, and outcomes of parental divorce, as well as its impact on children. It includes some mini-games that represent the challenges players face while making these choices.
